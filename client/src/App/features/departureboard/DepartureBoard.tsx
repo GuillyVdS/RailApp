@@ -23,8 +23,8 @@ export default function DepartureBoard({ departures }: Props) {
   return (
     <>
       <Container>
-        <Typography sx={{ fontWeight: "bold", textAlign: "center" }}>
-          <h2>{departures?.location} Station Departures</h2>
+        <Typography variant="h5" sx={{ fontWeight: "bold", textAlign: "center", margin: "15px" }}>
+          {departures?.location} Station Departures
         </Typography>
         <Grid sx={{ bgcolor: "#6e6e6e", color: "#c7b73e" }} container spacing={2}>
           <Grid item xs={12}>
